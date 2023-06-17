@@ -6,7 +6,8 @@ def range_of_prime_number(start_num, end_num):
         for j in range(1, i+1):
             if i % j == 0 :
                 divisor += 1
-        if divisor == 2 :
+        # if that number has only 2 divisor so it's prime number                
+        if divisor == 2 : 
             prime_result.append(i)
     return prime_result
 
